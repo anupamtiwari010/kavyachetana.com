@@ -514,13 +514,15 @@ text-align:center;
 justify-content:center;
 }
 .slide img{
-height:220px;
+height:auto;
+object-fit:contain;
+}
+
+.slider{
+background:#000;
 }
 
 }
 
-@media (max-width:992px){
-.slide img{
-height:350px;
-}
-}
+
+
