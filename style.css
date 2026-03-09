@@ -513,5 +513,14 @@ text-align:center;
 .social-icons{
 justify-content:center;
 }
+.slide img{
+height:220px;
+}
 
+}
+
+@media (max-width:992px){
+.slide img{
+height:350px;
+}
 }
