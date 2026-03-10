@@ -634,6 +634,52 @@ box-shadow:0 8px 20px rgba(255,65,108,0.5);
 }
 
 
+.poetry-hero{
+text-align:center;
+padding:80px 10%;
+background:linear-gradient(135deg,#fff3f3,#ffecec);
+}
+
+.poetry-hero h1{
+font-size:42px;
+font-family:'Playfair Display', serif;
+margin-bottom:10px;
+}
+
+.poetry-section{
+padding:70px 8%;
+}
+
+.poetry-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+/* POETRY CARD */
+
+.poetry-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+font-family:'Noto Serif Devanagari', serif;
+line-height:1.9;
+font-size:18px;
+transition:0.3s;
+}
+
+.poetry-card:hover{
+transform:translateY(-5px);
+}
+
+.poetry-card h2{
+margin-bottom:15px;
+color:#e63946;
+font-size: 23px;
+}
+
+
 /* MOBILE */
 
 @media (max-width:768px){
