@@ -1,4 +1,9 @@
+/* HERO SLIDER */
+
 let slides = document.querySelectorAll(".slide")
+
+if(slides.length > 0){
+
 let dots = document.querySelectorAll(".dot")
 let next = document.querySelector(".next")
 let prev = document.querySelector(".prev")
@@ -38,8 +43,6 @@ showSlide(index)
 }
 })
 
-/* Auto Slide */
-
 setInterval(()=>{
 index++
 if(index >= slides.length){
@@ -47,6 +50,8 @@ index = 0
 }
 showSlide(index)
 },4000)
+
+}
 
 
 let counters = document.querySelectorAll(".counter");
@@ -88,7 +93,6 @@ nav.classList.toggle("active")
 }
 
 
-/* TESTIMONIAL SLIDER */
 
 /* TESTIMONIAL SLIDER */
 
@@ -169,3 +173,19 @@ tIndex = 0;
 showTestimonial(tIndex);
 
 },5000);
+
+
+
+/* POETRY CARD FLIP MOBILE */
+
+let poetryCards = document.querySelectorAll(".poetry-card")
+
+poetryCards.forEach(card=>{
+
+card.addEventListener("click", function(){
+
+this.querySelector(".poetry-inner").classList.toggle("flip")
+
+})
+
+})
